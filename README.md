@@ -75,7 +75,7 @@ void did_set(id obj, NSString *key, id block);
 ```
 
 ### 设计
-
+>
 1. 使用一个`BOOL`类型的`class property`标记该setter方法是否插入过代码。
 1. 如果未插入过代码，则插入代码，并将该标记置为`YES`
 1. 取出该对象关联的`block`数组，依次调用。
